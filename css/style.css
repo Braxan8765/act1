@@ -1,0 +1,108 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 10px;
+}
+
+#articulo1 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: vista;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    width: 30%;
+    margin-right: auto;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(153, 0, 255);
+}
+
+nav{
+    margin-right: 1vw;
+    padding: 1px 0px 2px;
+    justify-content: space-between;
+
+}
+.barra_navegacion li {
+    display: inline-block;
+    padding: 12px 10px;
+}
+
+.barra_navegacion li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px ;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 300px;
+
+}
+
+#descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#descripcion h2 {
+    margin: 12px;
+    font-size: 22px;
+}
+
+#descripcion h3 {
+    font-weight: 200;
+    margin: 20px;
+}
+
+#precio{
+    margin: 10px;
+    font-size: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    gap: 10px;
+    grid-template-areas: "header header"
+                         "aside vista"
+                         "pie pie";
+}
+
+dt {font-size: 20px; margin: 15px 0px 15px 0px; color: coral; text-align: end;}
+
+footer {
+    grid-area: pie;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
