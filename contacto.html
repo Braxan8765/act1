@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brayan Garcia Santana">
+    <meta name="description" content="Pagina de Contacto">
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    <title>Contacto | Sneakers Store</title>
+</head>
+<body style="background-color: #1a1b1e;">
+    <header>
+        <a href="index.html" id="logo">
+            <img src="/assets/logo.png" alt="" style="width: 70px; margin-right: 10px;">
+            <h1>Sneakers Store</h1 style="color: rgb(255, 255, 255); font-size: 20px;">
+        </a>
+
+        <nav>
+            <ul class="barra_navegacion" style="list-style: none;">
+                <li><a id="inicio" href="index.html">Inicio</a></li>
+                <li><a id="catalago" href="catalago.html">Catalago</a></li>
+                <li><a id="acercaDe" href="acercaDe.html">Acerca de</a></li>
+                <li><a id="contacto" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="articulo1" style="flex-direction: row; justify-content: center; gap: 30px;">
+        <article id="articulo1" style="padding: 20px;">
+            <audio controls src="assets/Elevator.mp3"></audio>
+
+            <div class="contenedor" >
+                <form action="" style=" margin: 10px; display: flex; flex-direction: column; gap: 20px;"> 
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Nombre(s)">
+
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" placeholder="Apellidos">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+
+                    <label for="tel">Telefono</label>
+                    <input type="tel" id="tel" placeholder="10 Digitos">
+
+                    <label for="coment">Comentario</label>
+                    <textarea id="coment" cols="30" rows="10" placeholder="Comentario"></textarea>
+
+                    <div id="boton-form">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+
+        <article id="articulo1" style="justify-content: center;">
+            <div class="contenedor" style=" width: 80%;">
+                <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px;">
+                    <h3>Sucursales</h3>
+                    <table style="border: 1px solid black; ">
+                        <thead>
+                            <td><strong>Nombre Sucursal</strong></td><td><strong>Dirección</strong></td><td><strong>Telefono</strong></td>
+                        </thead>
+                        <tr>
+                            <td>Centro Mty</td><td>Avenida Isaac Garza 434, Monterrey NL</td><td>8192382301</td>
+                        </tr>
+                        <tr>
+                            <td>Cumbres</td><td>Paseo de los Leones 99, Monterrey, NL</td><td>8145342389</td>
+                        </tr>
+                        <tr>
+                            <td>Raul Salinas</td><td>Francisco Mujica 13, Escobedo NL</td><td>8198127832</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <img src="https://wallpaper.dog/large/10972169.png" alt="" width="50%">
+
+        </article>
+    </article>
+
+    <footer>
+        <address> Dirección: Ciudad Universitaria, San Nicolas de los Garza, Nuevo León</address>
+        <p><em><strong>Pagina Web hecha por: </strong>Brayan Garcia Santana</em></p>
+        <small>Derechos Reservados © 2024</small>
+    </footer>
+</body>
+</html>
